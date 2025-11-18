@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { faker } from "@faker-js/faker";
 
+
 test.beforeEach(async ({page}) => {
     await page.goto(process.env.APP_URL);
 })
