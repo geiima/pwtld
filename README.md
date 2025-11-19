@@ -3,6 +3,7 @@
 This project demonstrates automated testing using **Playwright**, focusing on external library integration (`Faker.js`), environment variables, and Continuous Integration (CI) with **GitHub Actions**.
 
 ---
+
 ## 🛠️ Project Setup and Execution
 
 ### 1. How to Install Dependencies
@@ -21,8 +22,8 @@ To execute the entire test suite locally:
 
 The application's base URL is retrieved from the **`APP_URL`** environment variable, ensuring the project remains flexible and secure.
 
-* **Local Execution:** The value is read from a local **`.env`** file (e.g., `APP_URL=https://fe-delivery.tallinn-learning.ee/signin`).
-* **CI Execution:** The value is securely read from a **GitHub Secret** named `APP_URL`.
+- **Local Execution:** The value is read from a local **`.env`** file (e.g., `APP_URL=https://fe-delivery.tallinn-learning.ee/signin`).
+- **CI Execution:** The value is securely read from a **GitHub Secret** named `APP_URL`.
 
 The URL is accessed in the code using:
 
